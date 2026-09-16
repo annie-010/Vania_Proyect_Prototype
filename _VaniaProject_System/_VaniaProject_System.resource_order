@@ -1,0 +1,18 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Backgrounds","order":2,"path":"folders/Backgrounds.yy",},
+    {"name":"_TileSets","order":2,"path":"folders/Backgrounds/_TileSets.yy",},
+    {"name":"Objects","order":1,"path":"folders/Objects.yy",},
+    {"name":"_SYSTEM","order":1,"path":"folders/Objects/_SYSTEM.yy",},
+    {"name":"_CHARACTERS","order":2,"path":"folders/Objects/_CHARACTERS.yy",},
+    {"name":"Rooms","order":5,"path":"folders/Rooms.yy",},
+    {"name":"Sprites","order":6,"path":"folders/Sprites.yy",},
+    {"name":"Tileset","order":7,"path":"folders/Tileset.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"o_SYS_MAINMENU","order":1,"path":"objects/o_SYS_MAINMENU/o_SYS_MAINMENU.yy",},
+    {"name":"r_InitVar","order":1,"path":"rooms/r_InitVar/r_InitVar.yy",},
+    {"name":"r_Menu","order":2,"path":"rooms/r_Menu/r_Menu.yy",},
+    {"name":"s_ch_enemy","order":1,"path":"sprites/s_ch_enemy/s_ch_enemy.yy",},
+  ],
+}
