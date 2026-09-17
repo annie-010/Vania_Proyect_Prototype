@@ -1,0 +1,1 @@
+_currentPlayerState = _playerStates._idle
