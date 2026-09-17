@@ -20,6 +20,7 @@ _keyDown=0;
 _keyUp=0;
 _keyRun=0;
 _keyJump=0;
+_keyAttack00=0;
 
 
 _isinfloor=false;

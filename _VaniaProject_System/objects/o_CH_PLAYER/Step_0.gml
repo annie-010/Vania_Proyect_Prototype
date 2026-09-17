@@ -4,9 +4,10 @@ _keyDown=keyboard_check(ord("S"));
 _keyUp=keyboard_check(ord("W"));
 _keyRun=keyboard_check(ord("J"));
 _keyJump=keyboard_check(ord("K"));
+_keyAttack00=keyboard_check_pressed(ord("L"));
 
 var _floorsensor = collision_line(x,y,x,y+1,_tilemap,1,1);
-if _floorsensor && move_y>0 {_isinfloor=true;} else if !_floorsensor {
+if _floorsensor {_isinfloor=true;} else if !_floorsensor {
 _isinfloor=false;}
 
 
@@ -59,13 +60,23 @@ _infotoshow="_inactive";
 break;
 
 case _playerStates._idle :
+
+if sprite_index!=s_player_side {
+sprite_index=s_player_side;}
+
 _infotoshow="_idle";
-if _isinfloor { if (_keyLeft or _keyRight) {_currentPlayerState=_playerStates._walk;}} else if !_isinfloor {_currentPlayerState=_playerStates._jumping;}
+
+
+if _isinfloor { 
+	if _keyAttack00 {_currentPlayerState=_playerStates._attack00;}
+	
+	if (_keyLeft or _keyRight) {_currentPlayerState=_playerStates._walk;}} else if !_isinfloor {_currentPlayerState=_playerStates._jumping;}
 break;
 case _playerStates._walk:
 _infotoshow="_walk";
 if _isinfloor && _keyRun  {_currentPlayerState=_playerStates._run;}
 if !_isinfloor {_currentPlayerState=_playerStates._jumping;}
+if (!_keyLeft and !_keyRight) {_currentPlayerState=_playerStates._idle;}
 break;
 case _playerStates._run:
 _infotoshow="_run";
@@ -84,10 +95,9 @@ break;
 
 case _playerStates._attack00:
 _infotoshow="_attack 00";
-if !sprite_index==s_player_attack {
+if sprite_index!=s_player_attack {
 sprite_index=s_player_attack;
 image_index=0;
-
 }
 break;
 case _playerStates._attack01:
