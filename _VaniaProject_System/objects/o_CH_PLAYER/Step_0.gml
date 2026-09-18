@@ -6,10 +6,26 @@ _keyRun=keyboard_check(ord("J"));
 _keyJump=keyboard_check(ord("K"));
 _keyAttack00=keyboard_check_pressed(ord("L"));
 
+var _sidesensor = collision_line(x+(16*image_xscale),y-128,x+(16*image_xscale),y,_tilemap,1,1);
+var _sidebacksensor = collision_line(x-(16*image_xscale),y-128,x-(16*image_xscale),y,_tilemap,1,1);
+if _sidebacksensor {x+=move_speed*image_xscale;}
+
+if _sidesensor {x-=move_speed*image_xscale;}
+
 var _floorsensor = collision_line(x,y,x,y+1,_tilemap,1,1);
 if _floorsensor {_isinfloor=true;} else if !_floorsensor {
 _isinfloor=false;}
 
+
+
+if _canbehurt==true {
+var _bodycollision = collision_rectangle(x-15,y-120,x+15,y,o_CH_DMG,1,1);
+
+if _bodycollision { currentHP-=15; _canbehurt=false; _timehurt=3; _currentPlayerState=_playerStates._hurt;}
+} else if _canbehurt==false {
+if _timehurt>0 {_timehurt-=global._deltaTimeUnit;} else if _timehurt<=0 {_canbehurt=true;}
+
+}
 
 
 
@@ -32,20 +48,9 @@ if _keyRun {move_speed=RUN_VELOCITY;} else if !_keyRun {move_speed=WALK_VELOCITY
 if _currentPlayerState==_playerStates._idle or _currentPlayerState==_playerStates._walk or
 _currentPlayerState==_playerStates._run  {
 	
-	if _isinfloor {
-		move_x=move_speed*(_keyRight - _keyLeft);
-if (_isinfloor && keyboard_check_pressed(vk_space)) {
-	_currentPlayerState=_playerStates._jumping;
-	move_y = _jumpspeed;
-	}
-	}
-	
-	
-	
-	
+	if _isinfloor {move_x=move_speed*(_keyRight - _keyLeft);
+if (_isinfloor && keyboard_check_pressed(vk_space)) {_currentPlayerState=_playerStates._jumping; move_y = _jumpspeed;}}
  else if !_isinfloor {_currentPlayerState=_playerStates._jumping;}
-	
-
 }
 
 
@@ -85,6 +90,8 @@ if !_isinfloor {_currentPlayerState=_playerStates._jumping;}
 
 break;
 case _playerStates._jumping: 
+move_x=move_speed*(_keyRight - _keyLeft);
+
 _infotoshow="_jumping";
 var _floorsensorinJump = collision_line(x,y,x,y+1,_tilemap,1,1);
 if _floorsensorinJump  {_isinfloor=true;}
@@ -105,6 +112,8 @@ _infotoshow="_attack 01";
 break;
 case _playerStates._hurt:
 _infotoshow="_hurt";
+if sprite_index!=s_player_hurt {sprite_index=s_player_hurt;}
+
 break;
 case _playerStates._dying:
 _infotoshow="_dying";

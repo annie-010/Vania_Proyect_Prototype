@@ -12,8 +12,8 @@
   "name":"o_CH_PLAYER",
   "overriddenProperties":[],
   "parent":{
-    "name":"_CHARACTERS",
-    "path":"folders/Objects/_CHARACTERS.yy",
+    "name":"_PLAYER",
+    "path":"folders/Objects/_CHARACTERS/_PLAYER.yy",
   },
   "parentObjectId":null,
   "persistent":false,
