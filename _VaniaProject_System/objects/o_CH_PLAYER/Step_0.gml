@@ -37,8 +37,7 @@ if _timehurt>0 {_timehurt-=global._deltaTimeUnit;} else if _timehurt<=0 {_canbeh
 move_y += _gravityforce;
 move_y = min(move_y,_maxfallspeed);
 
-if _keyRight {image_xscale=1;}
-if _keyLeft {image_xscale=-1;}
+
 
 
 
@@ -47,6 +46,12 @@ if _keyRun {move_speed=RUN_VELOCITY;} else if !_keyRun {move_speed=WALK_VELOCITY
 
 if _currentPlayerState==_playerStates._idle or _currentPlayerState==_playerStates._walk or
 _currentPlayerState==_playerStates._run  {
+	
+	
+	if _keyRight {image_xscale=1;}
+if _keyLeft {image_xscale=-1;}
+	
+	
 	
 	if _isinfloor {move_x=move_speed*(_keyRight - _keyLeft);
 if (_isinfloor && keyboard_check_pressed(vk_space)) {_currentPlayerState=_playerStates._jumping; move_y = _jumpspeed;}}
@@ -78,12 +83,22 @@ if _isinfloor {
 	if (_keyLeft or _keyRight) {_currentPlayerState=_playerStates._walk;}} else if !_isinfloor {_currentPlayerState=_playerStates._jumping;}
 break;
 case _playerStates._walk:
+
+if sprite_index!=s_player_walking {
+sprite_index=s_player_walking;}
+
+
 _infotoshow="_walk";
 if _isinfloor && _keyRun  {_currentPlayerState=_playerStates._run;}
 if !_isinfloor {_currentPlayerState=_playerStates._jumping;}
 if (!_keyLeft and !_keyRight) {_currentPlayerState=_playerStates._idle;}
 break;
 case _playerStates._run:
+
+if sprite_index!=s_player_running {
+sprite_index=s_player_running;}
+
+
 _infotoshow="_run";
 if !_keyRun {if !_keyRight && !_keyLeft {_currentPlayerState=_playerStates._idle;}}
 if !_isinfloor {_currentPlayerState=_playerStates._jumping;}
@@ -92,8 +107,12 @@ break;
 case _playerStates._jumping: 
 move_x=move_speed*(_keyRight - _keyLeft);
 
+if _keyAttack00 {_currentPlayerState=_playerStates._attack00;}
+
+
+
 _infotoshow="_jumping";
-var _floorsensorinJump = collision_line(x,y,x,y+1,_tilemap,1,1);
+var _floorsensorinJump = collision_line(x,y,x,y+2,_tilemap,1,1);
 if _floorsensorinJump  {_isinfloor=true;}
 if _isinfloor==true {_currentPlayerState=_playerStates._idle;}
 

@@ -37,6 +37,9 @@
     "name":"s_player_side",
     "path":"sprites/s_player_side/s_player_side.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"s_ch_player_mask",
+    "path":"sprites/s_ch_player_mask/s_ch_player_mask.yy",
+  },
   "visible":true,
 }
