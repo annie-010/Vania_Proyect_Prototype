@@ -8,7 +8,7 @@
     "TileSerialiseData":[],
   },
   "name":"Nivel_prueba2",
-  "out_columns":8,
+  "out_columns":6,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"tileset_water",
-    "path":"sprites/tileset_water/tileset_water.yy",
+    "name":"tileset_snow",
+    "path":"sprites/tileset_snow/tileset_snow.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -28,11 +28,11 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":16,
+  "tileHeight":64,
   "tilehsep":0,
   "tilevsep":0,
-  "tileWidth":16,
+  "tileWidth":64,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":72,
+  "tile_count":33,
 }

@@ -32,7 +32,9 @@
     {"$GMFolder":"","%Name":"Tileset","folderPath":"folders/Tileset.yy","name":"Tileset","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"images.jpe","CopyToMask":-1,"filePath":"datafiles","name":"images.jpe","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -58,6 +60,8 @@
     {"id":{"name":"_13544","path":"sprites/_13544/_13544.yy",},},
     {"id":{"name":"block_collision","path":"sprites/block_collision/block_collision.yy",},},
     {"id":{"name":"block","path":"sprites/block/block.yy",},},
+    {"id":{"name":"images_1","path":"sprites/images_1/images_1.yy",},},
+    {"id":{"name":"images","path":"sprites/images/images.yy",},},
     {"id":{"name":"s_bg_uvmap","path":"sprites/s_bg_uvmap/s_bg_uvmap.yy",},},
     {"id":{"name":"s_ch_enemy","path":"sprites/s_ch_enemy/s_ch_enemy.yy",},},
     {"id":{"name":"s_ch_player","path":"sprites/s_ch_player/s_ch_player.yy",},},
@@ -67,6 +71,8 @@
     {"id":{"name":"s_player_hurt","path":"sprites/s_player_hurt/s_player_hurt.yy",},},
     {"id":{"name":"s_player_side","path":"sprites/s_player_side/s_player_side.yy",},},
     {"id":{"name":"s_tileset_collisions","path":"sprites/s_tileset_collisions/s_tileset_collisions.yy",},},
+    {"id":{"name":"Sprite23","path":"sprites/Sprite23/Sprite23.yy",},},
+    {"id":{"name":"Sprite24","path":"sprites/Sprite24/Sprite24.yy",},},
     {"id":{"name":"Sprite7_1","path":"sprites/Sprite7_1/Sprite7_1.yy",},},
     {"id":{"name":"tileset_desert","path":"sprites/tileset_desert/tileset_desert.yy",},},
     {"id":{"name":"tileset_dirt","path":"sprites/tileset_dirt/tileset_dirt.yy",},},
