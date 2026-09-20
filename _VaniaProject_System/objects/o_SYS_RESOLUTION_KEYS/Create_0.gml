@@ -8,8 +8,8 @@ display_set_gui_size(1366, 768);
 camerawidth = camera_get_view_width(view_camera[0]);
 cameraheight = camera_get_view_height(view_camera[0]);
 _tilemap = layer_tilemap_get_id("TileSet_Collision");
-
-
+_move=0; 
+cameramusfollowto=noone;
 /*
 global._deltaTimeUnit = 0
 global._totalTime = 0;

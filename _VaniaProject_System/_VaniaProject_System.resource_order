@@ -41,5 +41,6 @@
     {"name":"tileset_water","order":5,"path":"sprites/tileset_water/tileset_water.yy",},
     {"name":"Nivel_prueba","order":1,"path":"tilesets/Nivel_prueba/Nivel_prueba.yy",},
     {"name":"Nivel_prueba2","order":2,"path":"tilesets/Nivel_prueba2/Nivel_prueba2.yy",},
+    {"name":"Tls_Collision","order":3,"path":"tilesets/Tls_Collision/Tls_Collision.yy",},
   ],
 }
