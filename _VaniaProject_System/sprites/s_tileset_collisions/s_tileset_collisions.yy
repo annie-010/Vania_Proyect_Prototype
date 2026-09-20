@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"s_tileset_collisions",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":511,
   "bbox_left":0,
-  "bbox_right":447,
+  "bbox_right":510,
   "bbox_top":0,
   "collisionKind":0,
   "collisionTolerance":0,
