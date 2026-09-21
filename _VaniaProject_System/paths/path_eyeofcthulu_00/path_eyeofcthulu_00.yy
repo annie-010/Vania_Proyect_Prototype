@@ -1,0 +1,25 @@
+{
+  "$GMPath":"",
+  "%Name":"path_eyeofcthulu_00",
+  "closed":true,
+  "kind":1,
+  "name":"path_eyeofcthulu_00",
+  "parent":{
+    "name":"Path",
+    "path":"folders/Path.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":266.0,"y":186.49951,},
+    {"speed":100.0,"x":-127.0,"y":194.49951,},
+    {"speed":100.0,"x":-447.22403,"y":290.25644,},
+    {"speed":100.0,"x":-585.00183,"y":536.9231,},
+    {"speed":100.0,"x":667.7762,"y":374.6998,},
+    {"speed":100.0,"x":879.44293,"y":101.366455,},
+    {"speed":100.0,"x":1512.7762,"y":-20.856873,},
+    {"speed":100.0,"x":1079.6652,"y":-88.96796,},
+    {"speed":100.0,"x":405.66516,"y":-78.634674,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

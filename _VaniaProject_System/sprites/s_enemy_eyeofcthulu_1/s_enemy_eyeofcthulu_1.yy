@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
-  "%Name":"s_enemy_eyeofcthulu_00",
+  "%Name":"s_enemy_eyeofcthulu_1",
   "bboxMode":0,
-  "bbox_bottom":127,
+  "bbox_bottom":499,
   "bbox_left":0,
-  "bbox_right":158,
+  "bbox_right":619,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,14 +16,14 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":128,
+  "height":500,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"4fa58068-36fc-42d6-813e-46e9f0ae5a5e","blendMode":0,"displayName":"default","isLocked":false,"name":"4fa58068-36fc-42d6-813e-46e9f0ae5a5e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"s_enemy_eyeofcthulu_00",
+  "name":"s_enemy_eyeofcthulu_1",
   "nineSlice":null,
-  "origin":4,
+  "origin":0,
   "parent":{
     "name":"_PLACEHOLDERS",
     "path":"folders/Sprites/_PLACEHOLDERS.yy",
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b849cc02-bc74-4c28-864b-0139c752599d","path":"sprites/s_enemy_eyeofcthulu_00/s_enemy_eyeofcthulu_00.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b849cc02-bc74-4c28-864b-0139c752599d","path":"sprites/s_enemy_eyeofcthulu_1/s_enemy_eyeofcthulu_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"673eedc0-96c5-4376-8238-5b853e65fad9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":79,
-    "yorigin":64,
+    "xorigin":0,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":159,
+  "width":620,
 }

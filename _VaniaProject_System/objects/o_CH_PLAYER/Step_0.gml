@@ -12,7 +12,7 @@ if _sidebacksensor {x+=move_speed*image_xscale;}
 
 if _sidesensor {x-=move_speed*image_xscale;}
 
-var _floorsensor = collision_line(x,y,x,y+1,_tilemap,1,1);
+var _floorsensor = collision_line(x-16,y+2,x+16,y+2,_tilemap,1,1);
 if _floorsensor {_isinfloor=true;} else if !_floorsensor {
 _isinfloor=false;}
 
@@ -112,7 +112,8 @@ if _keyAttack00 {_currentPlayerState=_playerStates._attack00;}
 
 
 _infotoshow="_jumping";
-var _floorsensorinJump = collision_line(x,y,x,y+2,_tilemap,1,1);
+
+var _floorsensorinJump = collision_line(x-16,y+2,x+16,y+2,_tilemap,1,1);
 if _floorsensorinJump  {_isinfloor=true;}
 if _isinfloor==true {_currentPlayerState=_playerStates._idle;}
 
@@ -125,6 +126,14 @@ if sprite_index!=s_player_attack {
 sprite_index=s_player_attack;
 image_index=0;
 }
+
+
+if image_index==2 && !instance_exists(o_CH_PLAYERDMG) {
+var _dmg = instance_create_layer(x+(128*image_xscale),y-64,"Instances",o_CH_PLAYERDMG);
+
+
+}
+
 break;
 case _playerStates._attack01:
 _infotoshow="_attack 01";
