@@ -30,14 +30,24 @@ _keyUp=0;
 _keyRun=0;
 _keyJump=0;
 _keyAttack00=0;
-
+_keyAttack01=0;
 
 _isinfloor=false;
 _gravityforce = 0.5;
-_maxfallspeed = 12;
-_jumpspeed = -12;
+_maxfallspeed = 10;
+_jumpspeed = -15;
 
 alarm[0]=1;
+
+
+_torch = 15;
+
+ target_x =0;
+ target_y =0;
+dx =0;
+dy =0;
+
+
 
 if !(instance_exists(o_CH_MENUINGAME)) {
 _menu = instance_create_layer(x,y,"Instances",o_CH_MENUINGAME);

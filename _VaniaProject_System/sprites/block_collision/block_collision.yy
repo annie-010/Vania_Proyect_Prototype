@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"_Collision_Obj",
-    "path":"folders/Objects/_Collision_Obj.yy",
+    "name":"_PLACEHOLDERS",
+    "path":"folders/Sprites/_PLACEHOLDERS.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
